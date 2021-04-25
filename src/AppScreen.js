@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createAppContainer } from 'react-navigation';
-import HomeStack from './Router';
+import TabNavigator from './Router';
 
-const AppContainer = createAppContainer(HomeStack);
+const AppContainer = createAppContainer(TabNavigator);
 
 class AppScreen extends Component {
     constructor(props){

@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { Button, StyleSheet,  Text, View } from 'react-native';
 
 export default class Home extends Component {
-    static navigationOptions = {
-        title: 'Home Hiepns',
-    };
-    
     constructor(props) {
         super(props);
     }
