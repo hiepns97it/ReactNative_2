@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { StyleSheet,  Text, View } from 'react-native';
+import { Button, StyleSheet,  Text, View } from 'react-native';
 
 export default class Home extends Component {
+    static navigationOptions = {
+        title: 'Home Hiepns',
+    };
+    
     constructor(props) {
         super(props);
     }
@@ -9,19 +13,16 @@ export default class Home extends Component {
     render() {
         return(
             <View>
-                <Text>
-                    ascas
-                </Text>
+                <Text>Home screen</Text>
+                <Button 
+                    title="Go to menu" 
+                    onPress={() => { this.props.navigation.navigate('Menu', {
+                            itemId : 97,
+                            otherParams: "hiepns"
+                        });
+                    }}
+                />
             </View>
         );
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "red"
-    }
-});
